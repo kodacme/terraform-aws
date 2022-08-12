@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  terraform:
+    container_name: tf-aws
+    build:
+      context: ./terraform
+    volumes:
+      - ./terraform:/terraform
+    tty: true
